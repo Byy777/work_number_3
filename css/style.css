@@ -1,0 +1,704 @@
+/*
+Media
+768px-268
+480-325
+320-507
+*/
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+@font-face{
+    src: url(../font/OpenSans-Bold.ttf);
+    font-family: OpenSans;
+}
+body{
+    background: #101114;
+}
+.container{
+    width: 1000px;
+    margin: 85px auto;
+    display: flex;
+}
+/* Menu */
+aside nav{
+    min-height: 551px;
+    width: 319px;
+    background: #1F2229;
+}
+nav .aside_logo{
+    display: block;
+    padding: 65px 113px 62px 30px;
+    background: #1F2228;
+}
+nav ul{
+    list-style: none;
+}
+nav li{
+    padding: 31px 0 27px 30px;
+}
+nav .nav_line{
+    background:#1F2228;
+    opacity: 0.5;
+    height: 2px;
+    padding: 0;
+}
+nav li a{
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-family: OpenSans, arial, sans-serif;
+}
+nav li:active {
+    background: #2A2D37;
+} 
+nav li a:hover{
+    color: #00AEEF;
+}
+nav li a:active{
+    color: #808592;
+}
+nav li .menu_lk, nav li .menu_exit{
+    color: #808592;
+}
+nav .nav_others, nav .nav_others{
+    background: #191C24;
+}
+/* /Menu */
+.content{  
+    width: 640px;
+    min-height: 997px;
+}
+/* Header */
+.header_text{
+    background: #00AEEF;
+    min-height: 163px;
+}
+.header_text h1{
+    padding: 52px 0 0 30px;
+    color:#383D43;
+    font-size: 35px;
+    font-family: OpenSans, arial, sans-serif;
+}
+.header_text p{
+    padding: 12px 0 0 30px;
+    color:#383D43;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+}
+/* /Header */
+/* main content */
+.main_content{
+    z-index: 2;
+    min-height: 570px;
+    background: #F7F8F8;
+}
+.main_content .info{
+    padding: 47px 0 0 30px;
+}
+.info .info_title{
+    color: #8494AB;
+}
+.info_account .info_account_number{
+    color: #8494AB;
+}
+.info_account{
+    display: flex;
+    margin-top: 23px;
+}
+.info_account .info_number{
+    margin-left: 62px;
+}
+.info_payment{
+    display: flex;
+    margin-top: 11px;
+}
+.info_payment .payment{
+    color: #8494AB;
+}
+.info_payment .payment_number{
+    margin-left: 41px;
+}
+.info_card{
+    position: relative;
+    z-index: 1;
+}
+.main_content .info_card{
+    padding: 35px 0 0 30px;
+}
+.info_card .info_bank_card{
+    color:#383D43;
+    font-family: OpenSans, arial, sans-serif;
+    font-size:19px;
+}
+.first_card{
+    width: 351px;
+    height: 237px;
+    border: 1px solid #8494AB;
+    border-radius: 10px;
+    background: #F7F8F8;
+    padding: 15px 0 0 10px;
+    margin-top: 21px;
+    z-index: -1;
+}
+.first_card_number{
+    color: #8494AB;
+    font-family: Arial, sans-serif;
+}
+.first_card_input{
+    margin-top: 4px;
+    display: flex;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type="number"] {
+    -moz-appearance: textfield;
+  }
+  input[type="number"]:hover,
+  input[type="number"]:focus {
+    -moz-appearance: number-input;
+  }
+.first_card_input input{
+    width: 66px;
+    height: 44px;
+    margin-right: 8px;
+    border: 1px solid #8494AB;
+    border-radius: 5px;
+    font-size: 18px;
+    padding-left: 5px;
+}
+.validity{
+    margin-top: 17px;
+}
+.validity .validity_info{
+    font-family: Arial, sans-serif;
+    color: #8494AB;
+}
+.validity select{
+    margin-top: 4px;
+    border: 1px solid #8494AB;
+    border-radius: 5px;
+    height: 43px;
+    font-size: 18px;
+    font-family: Arial, sans-serif;
+    cursor: pointer;
+}
+.validity select.validity_month{
+    width: 71px;
+}
+.validity select.validity_year{
+    width: 87px;
+}
+input.first_card_owner{
+    margin-top: 11px;
+    width: 320px;
+    height: 43px;
+    font-size: 19px;
+    padding-left: 5px;
+}
+input.first_card_owner::placeholder{
+    font-family: Arial, sans-serif;
+}
+form.form_card{
+    position: relative;
+    z-index: -1;
+}
+.second_card{
+    width: 351px;
+    height: 237px;
+    border: 1px solid #8494AB;
+    border-radius: 10px;
+    background: #F7F8F8;
+    z-index: -1;
+    position: absolute;
+    margin-left: 230px;
+    margin-top: -225px;
+}
+.second_card .second_card_line{
+    width: 100%;
+    background: #E4E9EE;
+    height: 43px;
+    margin-top: 26px;
+}
+.second_card .second_card_cvv{
+    margin-top: 19px;
+    margin-left: 200px;
+    font-family: Arial, sans-serif;
+    color: #8494AB;
+}
+.second_card .second_card_cvv_number{
+    border: 1px solid #8494AB;
+    border-radius: 5px;
+    margin-top: 4px;
+    width: 135px;
+    height: 43px;
+    font-size: 18px;
+    margin-left: 200px;
+    font-family: Arial, sans-serif;
+}
+.second_card .second_card_icon img{
+    position: absolute;
+    margin-left: -30px;
+    margin-top: 13px;
+    z-index: 1;
+    cursor: pointer;
+}
+input.second_card_btn{
+    width: 174px;
+    height: 41px;
+    background: #95BF00;
+    border-radius: 5px;
+    border: 1px solid #95BF00;
+    color: #FFFFFF;
+    font-family: OpenSans, arial, sans-serif;
+    font-size:18px;
+    margin-top: 34px;
+    cursor: pointer;
+}
+/* /main content */
+/* footer */
+.footer{
+    margin-top: 50px;
+    background: #373C43;
+    min-height: 300px;
+}
+.footer .footer_text{
+    padding: 27px 0 0 30px;
+    width: 610px;
+    height: 204px;
+}
+.footer_text p{
+    color: #89909D;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    line-height: 1.2rem;
+}
+/* /footer */
+
+
+@media screen and (max-width:768px){
+    .container{
+        width: 768px;
+        margin: 0 auto;
+    }
+    
+    aside nav{
+        min-height: 551px;
+        width: 200px;
+    }
+    nav .aside_logo{
+        padding: 65px 113px 62px 10px;
+    }
+    nav li{
+        padding: 31px 0 27px 10px;
+    }
+    nav li a:hover{
+        color: #808592;
+    }
+    nav li a{
+        font-size: 16px;
+    }
+    .content{
+        width: 530px;
+        min-height: 997px;
+    }
+    .header_text{
+        min-height: 163px;
+    }
+    .header_text h1{
+        padding: 52px 0 0 10px;
+        font-size: 30px;
+    }
+    .header_text p{
+        padding: 10px 0 0 10px;
+    }
+    .main_content .info{
+        padding: 30px 0 0 10px;
+    }
+    .main_content .info_card{
+        padding: 35px 0 0 10px;
+    }
+    .second_card{
+        margin-left: 165px;
+    }
+    .footer{
+        margin-top: 30px;
+        padding-bottom: 30px;
+    }
+    .footer .footer_text{
+        padding: 20px 0 0 10px;
+        width: 520px;
+        min-height: 330px;
+    }
+}
+@media screen and (max-width:480px){
+    .container{
+        width: 100vw;
+        margin: 0 auto;
+        display: block;
+    }
+    aside{
+        display: none;
+        width: 100vw;
+        height: 100vh;
+    }
+    .menu_btn{
+        display: inline-block;
+        cursor: pointer;
+        position:absolute;
+        top: 10px;
+        right: 5%;
+        }
+        .bar1, .bar2, .bar3 {
+        width: 50px;
+        height: 8px;
+        background-color: #333;
+        margin: 6px 0;
+        transition: 0.4s;
+    }
+    .change .bar1 {
+        background-color: #fff;
+        -webkit-transform: rotate(-45deg) translate(-13px, 9px);
+        transform: rotate(-45deg) translate(-13px, 9px);
+    }
+    
+    .change .bar2 {opacity: 0;}
+    
+    .change .bar3 {
+        background-color: #fff;
+        -webkit-transform: rotate(45deg) translate(-8px, -8px);
+        transform: rotate(45deg) translate(-8px, -8px);
+    }
+    aside nav{
+        height: 100vh;
+        width: 100vw;
+    }
+    nav .aside_logo{
+        display: block;
+        padding: 30px 0 30px 0;
+        margin: 0 auto;
+    }
+    nav li{
+        padding: 30px 0 30px auto;
+    }
+    nav li a{
+        font-size: 16px;
+    }
+    nav li a:hover{
+        color: #808592;
+    }
+    .content{
+        width: 100%;
+    }
+    .header_text{
+        background: #00AEEF;
+        min-height: 120px;
+    }
+    .header_text h1{
+        padding: 50px 0 0 10px;
+        font-size: 20px;
+
+    }
+    .header_text p{
+        padding: 5px 0 0 10px;
+        font-size: 12px;
+    }
+    .main_content{
+        min-height: 600px;
+    }
+    .main_content .info{
+        padding: 20px 0 0 10px;
+        font-size: 14px;
+    }
+    .info_account{
+        margin-top: 10px;
+    }
+    .info_payment{
+        margin-top: 10px;
+    }
+    .info_payment .payment{
+        color: #8494AB;
+    }
+    .info_payment .payment_number{
+        margin-left: 41px;
+    }
+    .info_card{
+        position: relative;
+        z-index: 1;
+    }
+    .main_content .info_card{
+        padding: 20px 0 0 10px;
+    }
+    .info_card .info_bank_card{
+        font-size:16px;
+    }
+    .first_card{
+        width: 300px;
+        height: 190px;
+        border: 1px solid #8494AB;
+        border-radius: 10px;
+        background: #F7F8F8;
+        padding: 15px 0 0 10px;
+        margin-top: 15px;
+    }
+    .first_card_input{
+        margin-top: 4px;
+        display: flex;
+    }
+    .first_card_input input{
+        width: 50px;
+        height: 35px;
+        margin-right: 5px;
+        font-size: 16px;
+        padding-left: 2px;
+    }
+    .validity{
+        margin-top: 10px;
+    }
+    .validity select{
+        height: 35px;
+        font-size: 16px;;
+    }
+    .validity select.validity_month{
+        width: 60px;
+    }
+    .validity select.validity_year{
+        width: 70px;
+    }
+    input.first_card_owner{
+        margin-top: 8px;
+        width: 220px;
+        height: 35px;
+        font-size: 16px;
+        padding-left: 2px;
+    }
+    form.form_card{
+        position: static;
+    }
+    .second_card{
+        position: static;
+        width: 300px;
+        height: 190px;
+        margin-left: 0;
+        margin-top: 0;
+    }
+    .second_card .second_card_line{
+        height: 35px;
+        margin-top: 26px;
+    }
+    .second_card .second_card_cvv{
+        margin-top: 19px;
+        margin-left: 160px;
+        font-size: 14px;
+    }
+    .second_card .second_card_cvv_number{
+        width: 100px;
+        height: 30px;
+        font-size: 14px;
+        margin-left: 160px;
+    }
+    .second_card .second_card_icon img{
+        margin-top: 6px;
+    }
+    input.second_card_btn{
+        font-size:14px;
+        margin-top: 25px;
+    }
+    .footer{
+        margin-top: 40px;
+        height: 90vh;
+    }
+    .footer .footer_text{
+        width: 90vw;
+    }
+
+}
+@media screen and (max-width:320px){
+    .container{
+        width: 100vw;
+        margin: 0 auto;
+        display: block;
+    }
+    aside{
+        display: none;
+        width: 100vw;
+        height: 100vh;
+    }
+    .menu_btn{
+        display: inline-block;
+        cursor: pointer;
+        position:absolute;
+        top: 10px;
+        right: 10px;
+        }
+        .bar1, .bar2, .bar3 {
+        width: 35px;
+        height: 5px;
+        background-color: #333;
+        margin: 6px 0;
+        transition: 0.4s;
+    }
+    .change .bar1 {
+        background-color: #fff;
+        -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+        transform: rotate(-45deg) translate(-9px, 6px);
+    }
+    
+    .change .bar2 {opacity: 0;}
+    
+    .change .bar3 {
+        background-color: #fff;
+        -webkit-transform: rotate(45deg) translate(-8px, -8px);
+        transform: rotate(45deg) translate(-8px, -8px);
+    }
+    aside nav{
+        height: 100vh;
+        width: 100vw;
+    }
+    nav .aside_logo{
+        display: block;
+        padding: 30px 0 30px 0;
+        margin: 0 auto;
+    }
+    nav li{
+        padding: 30px 0 30px auto;
+    }
+    nav li a{
+        font-size: 16px;
+    }
+    nav li a:hover{
+        color: #808592;
+    }
+    .content{
+        width: 100%;
+    }
+    .header_text{
+        background: #00AEEF;
+        min-height: 120px;
+    }
+    .header_text h1{
+        padding: 50px 0 0 10px;
+        font-size: 20px;
+
+    }
+    .header_text p{
+        padding: 5px 0 0 10px;
+        font-size: 12px;
+    }
+    .main_content{
+        min-height: 600px;
+    }
+    .main_content .info{
+        padding: 20px 0 0 10px;
+        font-size: 14px;
+    }
+    .info_account{
+        margin-top: 10px;
+    }
+    .info_payment{
+        margin-top: 10px;
+    }
+    .info_payment .payment{
+        color: #8494AB;
+    }
+    .info_payment .payment_number{
+        margin-left: 41px;
+    }
+    .info_card{
+        position: relative;
+        z-index: 1;
+    }
+    .main_content .info_card{
+        padding: 20px 0 0 10px;
+    }
+    .info_card .info_bank_card{
+        font-size:16px;
+    }
+    .first_card{
+        width: 300px;
+        height: 190px;
+        border: 1px solid #8494AB;
+        border-radius: 10px;
+        background: #F7F8F8;
+        padding: 15px 0 0 10px;
+        margin-top: 15px;
+    }
+    .first_card_input{
+        margin-top: 4px;
+        display: flex;
+    }
+    .first_card_input input{
+        width: 50px;
+        height: 35px;
+        margin-right: 5px;
+        font-size: 16px;
+        padding-left: 2px;
+    }
+    .validity{
+        margin-top: 10px;
+    }
+    .validity select{
+        height: 35px;
+        font-size: 16px;;
+    }
+    .validity select.validity_month{
+        width: 60px;
+    }
+    .validity select.validity_year{
+        width: 70px;
+    }
+    input.first_card_owner{
+        margin-top: 8px;
+        width: 220px;
+        height: 35px;
+        font-size: 16px;
+        padding-left: 2px;
+    }
+    form.form_card{
+        position: static;
+    }
+    .second_card{
+        position: static;
+        width: 300px;
+        height: 190px;
+        margin-left: 0;
+        margin-top: 0;
+    }
+    .second_card .second_card_line{
+        height: 35px;
+        margin-top: 26px;
+    }
+    .second_card .second_card_cvv{
+        margin-top: 19px;
+        margin-left: 160px;
+        font-size: 14px;
+    }
+    .second_card .second_card_cvv_number{
+        width: 100px;
+        height: 30px;
+        font-size: 14px;
+        margin-left: 160px;
+    }
+    .second_card .second_card_icon img{
+        margin-top: 6px;
+    }
+    input.second_card_btn{
+        font-size:14px;
+        margin-top: 25px;
+    }
+    .footer{
+        margin-top: 40px;
+        height: 100vh;
+    }
+    .footer .footer_text{
+        width: 90vw;
+    }
+    
+}

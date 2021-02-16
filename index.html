@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Chulakov</title>
+</head>
+<body>
+    <div class="container"> <!-- Page -->
+        <div class="menu_btn" onclick="myFunction(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+        <aside> <!-- Menu -->
+            <nav class="menu">
+                <a href="#"><img src="img/logo.png" alt="Chulakov ru" class="aside_logo"></a>
+                <ul>
+                    <li><a href="#">Первая ссылка</a></li>
+                    <li class="nav_line"></li>
+                    <li><a href="#">Вторая ссылка (активная)</a></li>
+                    <li class="nav_line"></li>
+                    <li><a href="#">Третья ссылка</a></li>
+                    <li class="nav_line"></li>
+                    <li class="nav_others"><a href="#" class="menu_lk">Личный кабинет</a></li>
+                    <li class="nav_line"></li>
+                    <li class="nav_others"><a href="#" class="menu_exit">Выход</a></li>
+                </ul>
+            </nav>
+        </aside> <!-- /Menu -->
+        <div class="content"> <!-- main page information -->
+            <div class="header_text"> <!-- header -->
+                <h1>Заголовок страницы</h1>
+                <p>В отличие от пылевого и ионного хвостов, направление поступает<br> в лимногляциальный часовой угол</p>
+            </div> <!-- /header -->
+            <div class="main_content"> <!-- main information -->
+                <div class="info"> <!-- payment information, etc. -->
+                    <div class="info_title">Информация по оплате</div>
+                    <div class="info_account">
+                        <div class="info_account_number">Номер счета:</div>
+                        <div class="info_number">87123658716587</div>
+                    </div>
+                    <div class="info_payment">
+                        <div class="payment">Сумма платежа:</div>
+                        <div class="payment_number">100 руб.</div>
+                    </div>
+                </div> <!-- /payment information, etc. -->
+                <div class="info_card"> <!-- bank card -->
+                    <div class="info_bank_card">Данные банковской карты</div>
+                    <form action="#" class="form_card">
+                        <div class="first_card">
+                            <div class="first_card_number">Номер карты</div>
+                            <div class="first_card_input">
+                                <input type="number" required id="card_number_1" onKeyUp="check('card_number_1', reg_card_1)">
+                                <input type="number" required id="card_number_2" onKeyUp="check('card_number_2', reg_card_2)">
+                                <input type="number" required id="card_number_3" onKeyUp="check('card_number_3', reg_card_3)">
+                                <input type="number" required id="card_number_4" onKeyUp="check('card_number_4', reg_card_4)">
+                            </div>
+                            <div class="validity">
+                                <div class="validity_info">Срок действия</div>
+                                <select class="validity_month" required>
+                                    <option value="">02</option>
+                                    <option>03</option>
+                                    <option>04</option>
+                                </select>
+                                <select class="validity_year" required>
+                                    <option value="">2021</option>
+                                    <option>2022</option>
+                                    <option>2023</option>
+                                </select>
+                            </div>
+                            <input class="first_card_owner" type="text" placeholder="Держатель карты" required  id="ownerCard" onKeyUp="check('ownerCard', reg_ownerCard)">
+                        </div>
+                        <div class="second_card">
+                            <div class="second_card_line"></div>
+                            <div class="second_card_cvv">Код CVV2 / CVC2</div>
+                            <div class="second_card_icon">
+                                <input class="second_card_cvv_number" type="number" id="card_number_cvv" onKeyUp="check('card_number_cvv', reg_card_cvv)" required>
+                                <img src="img/info.svg" title="help" alt="help info" width="26" height="26">
+					        </div>
+                        </div>
+                        <input type="submit" class="second_card_btn" onclick="submitFilled()" value="Оплатить">
+                    </form>
+                </div> <!-- /bank card -->
+                <div class="footer"> <!-- footer -->
+                    <div class="footer_text">
+                        <p>Исходя из астатической системы координат Булгакова, соединение стабильно. Краевая часть артезианского бассейна, которая в настоящее время находится ниже уровня моря, ослабляет систематический уход. Лисичка традиционно трансформирует прецессионный годовой параллакс.</p>
+                        <br>
+                        <p>Выклинивание абсолютно аккумулирует твердый pадиотелескоп Максвелла.</p>
+                        <br>
+                        <p>Алмаз слагает горст. Делювий длительно колеблет лазерный подвижный объект.</p>
+                        <br>
+                        <p>Устойчивость, например, параллельна. Аргумент перигелия определяет боксит. Проекция вертикально дает уходящий диабаз. Если пренебречь малыми величинами, то видно, что угол крена покрывает вибрирующий волчок, что обусловлено не только первичными неровностями эрозионно-тектонического рельефа поверхности кристаллических пород, но и проявлениями долее поздней блоковой тектоники. Засветка неба заставляет иначе взглянуть на то, что такое волчок.</p>
+                    </div>
+                    
+                </div> <!-- /footer -->
+            </div> <!-- /main information -->
+        </div> <!-- /main page information -->
+    </div> <!-- /Page -->
+    <script src="js/script.js"></script>
+</body>
+</html>
